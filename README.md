@@ -1,10 +1,11 @@
 # ComputerFrier trojan
 ## What is the ComputerFrier trojan?
 It is a trojan that will drop you into a fake shell.
+Below is the preview of the terminal of an infected user who is trying to use system health checks and giving up.
 
 <img width="621" height="350" src="https://github.com/user-attachments/assets/4394bfd6-ee90-41d8-b9dd-f512abd63c59" />
 
-This is an example, where the user got infected, and they were trying to type `ls /` to make sure their system was okay, and it printed the message:
+It kept printing the message:
 ```
 Your files are gone. hehe :)
 ```
@@ -58,9 +59,9 @@ Go into Finder. Press Cmd+Shift+G, and type this into the box:
 ```
 Search for a folder whose name is the computer ID of the infected computer. Go into that folder, and delete startup.lua. Proceed onto the next step of disinfecting.
 #### On Linux
-Open up the terminal, and run this command:
+Open up the terminal, and run this command (replace the `0` with the actual ID of your infected computer):
 ```
-COMPUTERID=<your computer ID> rm -f ~/.local/share/craftos-pc/computer/$COMPUTERID/startup.lua ~/.craftos/computer/$COMPUTERID/startup.lua
+COMPUTERID=0 && rm -f ~/.local/share/craftos-pc/computer/$COMPUTERID/startup.lua ~/.craftos/computer/$COMPUTERID/startup.lua
 ```
 Proceed onto the next step of disinfecting.
 #### Disinfecting the settings
