@@ -9,6 +9,8 @@ Below is the preview of the terminal of an infected user who is trying to use sy
 
 To download the thumbnail script, [click here](./Thumbnail.lua).
 
+To download the trojan, [click here](./ComputerFrier.lua).
+
 It kept printing the message:
 ```
 Your files are gone. hehe :)
