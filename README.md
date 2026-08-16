@@ -5,6 +5,7 @@ Below is the preview of the terminal of an infected user who is trying to use sy
 
 <img width="621" height="350" src="https://github.com/user-attachments/assets/4394bfd6-ee90-41d8-b9dd-f512abd63c59" />
 *Note: This preview was not the actual malware. A safe thumbnail script is used, but the result is recreatable using the malware.*
+
 To download the thumbnail script, [click here](./Thumbnail.lua).
 
 It kept printing the message:
