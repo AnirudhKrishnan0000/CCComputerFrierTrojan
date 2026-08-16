@@ -38,3 +38,35 @@ Goodbye
 ```
 2 seconds after the "Goodbye" is printed, and it will reboot your system, putting you in the bootloop.
 It is an extremely simple trojan, but it is very destructive.
+
+## How to disinfect after this trojan?
+### Disinfecting in Minecraft
+To disinfect the trojan in Minecraft, it is very simple. You should switch to Survival, and smash the computer using a pickaxe.
+If this does not work, and you are a server administrator (or playing in singleplayer), you can delete `your_save/computercraft/computer/<ID>/startup.lua`.
+### Disinfecting in CraftOS-PC
+To disinfect here, it is a little bit complicated.
+#### On Windows
+Press Win+R, and type this inside the box:
+```
+%localappdata%\CraftOS-PC\computer\
+```
+Search for a folder whose name is the computer ID of the infected computer. Go into that folder, and delete startup.lua. Proceed onto the next step of disinfecting.
+#### On macOS
+Go into Finder. Press Cmd+Shift+G, and type this into the box:
+```
+~/Library/Application Support/CraftOS-PC/computer
+```
+Search for a folder whose name is the computer ID of the infected computer. Go into that folder, and delete startup.lua. Proceed onto the next step of disinfecting.
+#### On Linux
+Open up the terminal, and run this command:
+```
+COMPUTERID=<your computer ID> rm -f ~/.local/share/craftos-pc/computer/$COMPUTERID/startup.lua ~/.craftos/computer/$COMPUTERID/startup.lua
+```
+Proceed onto the next step of disinfecting.
+#### Disinfecting the settings
+To disinfect the settings, you have already removed the bootlooper script. This means you have a fully functional CraftOS computer.
+Open CraftOS-PC, and run this command inside it:
+```
+set shell.allow_disk_startup true
+```
+Now, your system has been fully disinfected.
